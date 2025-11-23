@@ -244,7 +244,7 @@ nav li a {
   /* grid-template-columns: repeat(6, 1fr); */
   grid-template-columns: repeat(
     auto-fit,
-    minmax(clamp(6rem, 20vw, 12rem), 1fr)
+    minmax(clamp(6rem, 26vw, 12rem), 1fr)
   );
   /* background-color: blue; */
   gap: 20px;
@@ -606,3 +606,4 @@ button {
     display: none;
   }
 }
+
