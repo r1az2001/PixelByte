@@ -18,7 +18,7 @@ header {
   margin-bottom: 10px;
 }
 
-nav {
+nav { 
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 1fr;
@@ -605,5 +605,12 @@ button {
   .sort {
     display: none;
   }
-}
 
+  .carousel-item img {
+    width: 100%;
+    aspect-ratio: 2;
+    object-fit: cover;
+    object-position: top;
+    opacity: 75%;
+  }
+}
