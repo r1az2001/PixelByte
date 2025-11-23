@@ -596,7 +596,7 @@ button {
   }
 }
 
-@media (max-width: 460px) {
+@media (max-width: 500px) {
   nav .login-button {
     grid-column: 10 / span 3;
     justify-self: end;
@@ -607,10 +607,7 @@ button {
   }
 
   .carousel-item img {
-    width: 100%;
     aspect-ratio: 2;
-    object-fit: cover;
-    object-position: top;
-    opacity: 75%;
   }
 }
+
