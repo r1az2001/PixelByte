@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PixelByte</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-logo">
+          <a href="#"><img src="./logo.png" alt="" /></a>
+        </div>
+
+        <div class="menu-links small-nav">
+          <ul>
+            <li id="home">
+              <a href="#">Home</a>
+            </li>
+            <li id="category">
+              <a href="#">Category</a>
+            </li>
+            <li id="live">
+              <a href="#">Live</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="nav-search small-nav">
+          <div>
+            <input type="search" placeholder="Search here..." id="searchbox" />
+          </div>
+          <div id="search-icon">
+            <a href="#">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="login-button">
+          <button id="loginbutton">Sign in</button>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://wallpaper.forfun.com/fetch/9e/9e23e45f2c153d115cc4a98003945b0d.jpeg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-md-block">
+              <div class="movie-info">
+                <span><i class="fa-solid fa-film"></i>Action</span>
+                <span><i class="fa-solid fa-calendar"></i>2020</span>
+                <span><i class="fa-solid fa-clock"></i>2H30M</span>
+              </div>
+              <h5>Kung-Fu Panda</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://img.englishcinemaparis.com/81cU6r7pIc0CcOpzpAq3moBp9HYaSJ-KwPT17DH7Pnc/resize:fill:800:450:1:0/gravity:sm/aHR0cHM6Ly9leHBhdGNpbmVtYXByb2QuYmxvYi5jb3JlLndpbmRvd3MubmV0L2ltYWdlcy80NDJiNzFlNC02M2VhLTRkMmYtYjQ1ZS01NGNkZGI4MzgzZmMuanBn.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-md-block">
+              <div class="movie-info">
+                <span><i class="fa-solid fa-film"></i>Action</span>
+                <span><i class="fa-solid fa-calendar"></i>2020</span>
+                <span><i class="fa-solid fa-clock"></i>2H30M</span>
+              </div>
+              <h5>How to Train Your Dragon</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://media.universalparksusa.com/wp-content/uploads/2024/03/How-to-Train-Your-Dragon-Isle-of-Berk-1.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-md-block">
+              <div class="movie-info">
+                <span><i class="fa-solid fa-film"></i>Action</span>
+                <span><i class="fa-solid fa-calendar"></i>2020</span>
+                <span><i class="fa-solid fa-clock"></i>2H30M</span>
+              </div>
+              <h5>How to Train Your Dragon</h5>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <section>
+      <div class="filter-sort">
+        <div class="filter">
+          <div class="filter-genre">
+            <select name="filter-name" id="filter-genre">
+              <option value="all">All Genre</option>
+              <option value="action">Action</option>
+              <option value="comedy">Comedy</option>
+              <option value="fantasy">Fantasy</option>
+              <option value="animation">Animation</option>
+              <option value="adeventure">Adventure</option>
+              <option value="horor">Horor</option>
+            </select>
+          </div>
+
+          <div class="filter-year">
+            <select name="year-name" id="filter-year">
+              <option value="all">Years</option>
+              <option value="2023-Current">2023-Current</option>
+              <option value="2021-2023">2021-2023</option>
+              <option value="2016-2020">2016-2020</option>
+              <option value="2006-2015">2006-2015</option>
+              <option value="1990-2005">1990-2005</option>
+              <option value="Before 1990">Before 1990</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="sort">
+          <input type="radio" id="sort1" name="sort" value="fetured" />
+          <label for="sort1">Fetured</label>
+
+          <input type="radio" id="sort2" name="sort" value="popular" />
+          <label for="sort2">Popular</label>
+
+          <input type="radio" id="sort3" name="sort" value="newest" />
+          <label for="sort3">Newest</label>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="grid-list">
+        <div class="card">
+          <div class="card-head">
+            <div class="overlay">
+              <div class="play">
+                <i class="fa-solid fa-circle-play"></i>
+              </div>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <span class="rating-text">7.8</span>
+              </div>
+            </div>
+            <img class="movie-image" src="movies\1917.jpg" alt="D" />
+          </div>
+
+          <div class="card-tail">
+            <p class="card-movie-name">1971</p>
+            <div class="card-description">
+              <p>Action</p>
+              <p>1971</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-head">
+            <div class="overlay">
+              <div class="play">
+                <i class="fa-solid fa-circle-play"></i>
+              </div>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <span class="rating-text">7.8</span>
+              </div>
+            </div>
+            <img class="movie-image" src="movies\captain-marvel.jpg" alt="" />
+          </div>
+          <div class="card-tail">
+            <p class="card-movie-name">Captain Mommy</p>
+            <div class="card-description">
+              <p>Action</p>
+              <p>2020</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-head">
+            <div class="overlay">
+              <div class="play">
+                <i class="fa-solid fa-circle-play"></i>
+              </div>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <span class="rating-text">7.8</span>
+              </div>
+            </div>
+            <img class="movie-image" src="movies\casino-royale.jpg" alt="" />
+          </div>
+
+          <div class="card-tail">
+            <p class="card-movie-name">Battle Royale</p>
+            <div class="card-description">
+              <p>Action</p>
+              <p>2015</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-head">
+            <div class="overlay">
+              <div class="play">
+                <i class="fa-solid fa-circle-play"></i>
+              </div>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <span class="rating-text">7.8</span>
+              </div>
+            </div>
+            <img class="movie-image" src="movies\dark-knight.jpg" alt="" />
+          </div>
+
+          <div class="card-tail">
+            <p class="card-movie-name">Batman</p>
+            <div class="card-description">
+              <p>Action</p>
+              <p>2003</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-head">
+            <div class="overlay">
+              <div class="play">
+                <i class="fa-solid fa-circle-play"></i>
+              </div>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <span class="rating-text">7.8</span>
+              </div>
+            </div>
+            <img class="movie-image" src="movies\dune.jpg" alt="" />
+          </div>
+
+          <div class="card-tail">
+            <p class="card-movie-name">June</p>
+            <div class="card-description">
+              <p>Adventure</p>
+              <p>2020</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-head">
+            <div class="overlay">
+              <div class="play">
+                <i class="fa-solid fa-circle-play"></i>
+              </div>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <span class="rating-text">7.8</span>
+              </div>
+            </div>
+            <img class="movie-image" src="movies\endgame.jpg" alt="" />
+          </div>
+
+          <div class="card-tail">
+            <p class="card-movie-name">Endgame</p>
+            <div class="card-description">
+              <p>Action</p>
+              <p>2019</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-head">
+            <div class="overlay">
+              <div class="play">
+                <i class="fa-solid fa-circle-play"></i>
+              </div>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <span class="rating-text">7.8</span>
+              </div>
+            </div>
+            <img class="movie-image" src="movies\eternals.jpg" alt="" />
+          </div>
+
+          <div class="card-tail">
+            <p class="card-movie-name">Eternals</p>
+            <div class="card-description">
+              <p>Action</p>
+              <p>2023</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-head">
+            <div class="overlay">
+              <div class="play">
+                <i class="fa-solid fa-circle-play"></i>
+              </div>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <span class="rating-text">7.8</span>
+              </div>
+            </div>
+            <img class="movie-image" src="movies\gladiator.jpg" alt="" />
+          </div>
+
+          <div class="card-tail">
+            <p class="card-movie-name">Gladiator</p>
+            <div class="card-description">
+              <p>History</p>
+              <p>2002</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-head">
+            <div class="overlay">
+              <div class="play">
+                <i class="fa-solid fa-circle-play"></i>
+              </div>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <span class="rating-text">7.8</span>
+              </div>
+            </div>
+            <img class="movie-image" src="movies\interstaller.jpg" alt="" />
+          </div>
+
+          <div class="card-tail">
+            <p class="card-movie-name">Interstaller</p>
+            <div class="card-description">
+              <p>Sci-Fi</p>
+              <p>2014</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-head">
+            <div class="overlay">
+              <div class="play">
+                <i class="fa-solid fa-circle-play"></i>
+              </div>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <span class="rating-text">7.8</span>
+              </div>
+            </div>
+            <img class="movie-image" src="movies\LOTR.jpg" alt="" />
+          </div>
+
+          <div class="card-tail"></div>
+          <p class="card-movie-name">LOTR</p>
+          <div class="card-description">
+            <p>Fantasy</p>
+            <p>2001</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-head">
+            <div class="overlay">
+              <div class="play">
+                <i class="fa-solid fa-circle-play"></i>
+              </div>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <span class="rating-text">7.8</span>
+              </div>
+            </div>
+            <img class="movie-image" src="movies\matrix.jpg" alt="" />
+          </div>
+
+          <div class="card-tail"></div>
+          <p class="card-movie-name">Matrix</p>
+          <div class="card-description">
+            <p>Sci-Fi</p>
+            <p>1999</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-head">
+            <div class="overlay">
+              <div class="play">
+                <i class="fa-solid fa-circle-play"></i>
+              </div>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <span class="rating-text">7.8</span>
+              </div>
+            </div>
+            <img class="movie-image" src="movies\panther.jpg" alt="" />
+          </div>
+
+          <div class="card-tail"></div>
+          <p class="card-movie-name">Black Panther</p>
+          <div class="card-description">
+            <p>Action</p>
+            <p>2017</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="load-button-div">
+        <button class="load-button">Load More</button>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-heading"><h1>Genre</h1></div>
+
+      <div class="genre-grid">
+        <div class="category-card">
+          <div class="category-card-info">
+            <div class="name">Action</div>
+            <div class="total">100</div>
+          </div>
+
+          <div class="category-image">
+            <img src="category\action.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="category-card">
+          <div class="category-card-info">
+            <div class="name">Action</div>
+            <div class="total">100</div>
+          </div>
+
+          <div class="category-image">
+            <img src="category\adventure.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="category-card">
+          <div class="category-card-info">
+            <div class="name">Action</div>
+            <div class="total">100</div>
+          </div>
+
+          <div class="category-image">
+            <img src="category\animated.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="category-card">
+          <div class="category-card-info">
+            <div class="name">Action</div>
+            <div class="total">100</div>
+          </div>
+          <div class="category-card-info">
+            <div class="name">Action</div>
+            <div class="total">100</div>
+          </div>
+
+          <div class="category-image">
+            <img src="category\comedy.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="category-card">
+          <div class="category-card-info">
+            <div class="name">Action</div>
+            <div class="total">100</div>
+          </div>
+
+          <div class="category-image">
+            <img src="category\crime.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="category-card">
+          <div class="category-card-info">
+            <div class="name">Action</div>
+            <div class="total">100</div>
+          </div>
+
+          <div class="category-image">
+            <img src="category\funny.jpeg" alt="" />
+          </div>
+        </div>
+
+        <div class="category-card">
+          <div class="category-card-info">
+            <div class="name">Action</div>
+            <div class="total">100</div>
+          </div>
+
+          <div class="category-image">
+            <img src="category\sci-fi.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="category-card">
+          <div class="category-card-info">
+            <div class="name">Action</div>
+            <div class="total">100</div>
+          </div>
+
+          <div class="category-image">
+            <img src="category\thriller.webp" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="footer">
+        <div class="site-branding">
+          <div class="site-name">
+            <div class="footer-logo">
+              <img src="./logo.png" alt="" />
+            </div>
+          </div>
+          <div class="site-description">
+            <h5>Hello there! Enjoy!</h5>
+          </div>
+          <div class="site-social-links">
+            <a href-="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href-="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href-="#"><i class="fa-brands fa-reddit"></i></a>
+            <a href-="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="info-links">
+          <ul>
+            <h5>PixelByte</h5>
+            <li>About Us</li>
+            <li>Pricing Plans</li>
+            <li>Partners</li>
+            <li>Contacts</li>
+          </ul>
+        </div>
+
+        <div class="content-links">
+          <ul>
+            <h5>Browse</h5>
+            <li>Live TV</li>
+            <li>Live News</li>
+            <li>Live Sports</li>
+            <li>Streming Library</li>
+          </ul>
+        </div>
+
+        <div class="content-links-2">
+          <ul>
+            <h5 style="opacity: 0">None</h5>
+            <li>TV Shows</li>
+            <li>Movies</li>
+            <li>Kids</li>
+            <li>Collections</li>
+          </ul>
+        </div>
+
+        <div class="help-links">
+          <ul>
+            <h5>Help</h5>
+            <li>Account & Billing</li>
+            <li>Plans Pricing</li>
+            <li>Supported Devices</li>
+            <li>Accessibility</li>
+          </ul>
+        </div>
+
+        <div class="site-copyright">
+          <div><p>&copy; copyright 2025 PixelByte</p></div>
+          <div class="d-flex">
+            <p>Privacy Policy</p>
+            <p class="ms-3">Terms & Conditions</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
